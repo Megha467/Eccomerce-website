@@ -1,0 +1,7 @@
+.background{
+background-color: #15113D;
+    /* background-color: linear-gradient(#15113D, #15113D, 0.2); */
+}
+.outline{
+    border: white solid 2px;
+}
