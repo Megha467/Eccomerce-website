@@ -7,6 +7,9 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
 import { Provider } from 'react-redux'
 import store from './redux/store';
+import {saveState, loadState} from './redux/localStorage';
+store.subscribe(() => saveState(store.getState()));
+ 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
